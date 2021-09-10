@@ -26,7 +26,7 @@ urlpatterns = [
 
     # scienceカテゴリの一覧ページのURLパターン
     path(
-        'science-list/',
+        'science_list/',
         views.ScienceView.as_view(),
         name='science_list'
     ),
