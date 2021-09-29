@@ -24,11 +24,11 @@ urlpatterns = [
         name='blog_detail'
     ),
 
-    # scienceカテゴリの一覧ページのURLパターン
+    # hobbyカテゴリの一覧ページのURLパターン
     path(
-        'science_list/',
-        views.ScienceView.as_view(),
-        name='science_list'
+        'hobby_list/',
+        views.HobbyView.as_view(),
+        name='hobby_list'
     ),
 
     # dailylifeカテゴリの一覧ページのURLパターン
@@ -38,11 +38,11 @@ urlpatterns = [
         name='dailylife_list'
     ),
 
-    # musicカテゴリの一覧ページのURLパターン
+    # knowledgeカテゴリの一覧ページのURLパターン
     path(
-        'music-list/',
-        views.MusicView.as_view(),
-        name='music_list'
+        'knowledge-list/',
+        views.KnowledgeView.as_view(),
+        name='knowledge_list'
     ),
 
     # 問い合わせページのURLパターン
