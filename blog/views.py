@@ -48,17 +48,17 @@ class BlogDetail(DetailView):
     model = BlogPost
 
 
-class ScienceView(ListView):
-    '''科学(science)カテゴリの記事を一覧表示するビュー'''
-    # science_list.htmlをレンダリングする
-    template_name = 'science_list.html'
+class HobbyView(ListView):
+    '''趣味(hobby)カテゴリの記事を一覧表示するビュー'''
+    # hobby_list.htmlをレンダリングする
+    template_name = 'hobby_list.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
     # object_listキーの別名を設定
-    context_object_name = 'science_records'
-    # category = 'science'のレコードを抽出して投稿日時の降順で並び替える
+    context_object_name = 'hobby_records'
+    # category = 'hobby'のレコードを抽出して投稿日時の降順で並び替える
     queryset = BlogPost.objects.filter(
-        category='science').order_by('-posted_at')
+        category='hobby').order_by('-posted_at')
     # 1ページに表示するレコードの件数
     paginate_by = 2
 
@@ -78,17 +78,17 @@ class DailylifeView(ListView):
     paginate_by = 2
 
 
-class MusicView(ListView):
-    '''音楽(music)カテゴリの記事を一覧表示するビュー'''
-    # music_list.htmlをレンダリングする
-    template_name = 'music_list.html'
+class KnowledgeView(ListView):
+    '''知識(knowledge)カテゴリの記事を一覧表示するビュー'''
+    # knowledge_list.htmlをレンダリングする
+    template_name = 'knowledge_list.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
     # object_listキーの別名を設定
-    context_object_name = 'music_records'
-    # category = 'music'のレコードを抽出して投稿日時の降順で並び替える
+    context_object_name = 'knowledge_records'
+    # category = 'knowledge'のレコードを抽出して投稿日時の降順で並び替える
     queryset = BlogPost.objects.filter(
-        category='music').order_by('-posted_at')
+        category='knowledge').order_by('-posted_at')
     # 1ページに表示するレコードの件数
     paginate_by = 2
 
