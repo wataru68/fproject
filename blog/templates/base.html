@@ -11,7 +11,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!-- ページタイトル -->
-    <title>Wata's Django</title>
+    <title>WataのBloG</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -43,9 +43,7 @@
         <!--
                 ナビゲーションバー左上のアンカーテキストとhref属性の値を変更
                 -->
-        <a class="navbar-brand" href="{% url 'blog:index' %}"
-          >Inexperienced Engineer</a
-        >
+        <a class="navbar-brand" href="{% url 'blog:index' %}">WataのBloG</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -70,11 +68,13 @@
             </li>
             <li class="nav-item">
               <!--
-                ナビゲーションメニューの「SCIENCE」のリンク先を
-                名前付きURLパターンscience_listに設定する
+                ナビゲーションメニューの「HOBBY」のリンク先を
+                名前付きURLパターンhobby_listに設定する
               -->
-              <a class="nav-link" href="{% url 'blog:science_list' %}"
-                >SCIENCE</a
+              <a
+                class="nav-link px-lg-3 py-3 py-lg-4"
+                href="{% url 'blog:hobby_list' %}"
+                >HOBBY</a
               >
             </li>
             <li class="nav-item">
@@ -82,23 +82,33 @@
                 ナビゲーションメニューの「DAILYLIFE」のリンク先を
                 名前付きURLパターンdailylife_listに設定する
               -->
-              <a class="nav-link" href="{% url 'blog:dailylife_list' %}"
+              <a
+                class="nav-link px-lg-3 py-3 py-lg-4"
+                href="{% url 'blog:dailylife_list' %}"
                 >DAILYLIFE</a
               >
             </li>
             <li class="nav-item">
               <!--
-                  ナビゲーションメニューの「MUSIC」のリンク先を
-                  名前付きURLパターンmusic_listに設定する
+                  ナビゲーションメニューの「KNOWLEDGE」のリンク先を
+                  名前付きURLパターンknowledge_listに設定する
               -->
-              <a class="nav-link" href="{% url 'blog:music_list' %}">MUSIC</a>
+              <a
+                class="nav-link px-lg-3 py-3 py-lg-4"
+                href="{% url 'blog:knowledge_list' %}"
+                >KNOWLEDGE</a
+              >
             </li>
             <li class="nav-item">
               <!--
                 ナビゲーションメニューの「CONTACT」のリンク先を
                 名前付きURLパターンcontactに設定する
               -->
-              <a class="nav-link" href="{% url 'blog:contact' %}">CONTACT</a>
+              <a
+                class="nav-link px-lg-3 py-3 py-lg-4"
+                href="{% url 'blog:contact' %}"
+                >CONTACT</a
+              >
             </li>
           </ul>
         </div>
